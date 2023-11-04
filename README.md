@@ -14,6 +14,7 @@ IDE: Any IDE that supports Java and Spring Boot, like IntelliJ IDEA or Eclipse.
 
 OpenWeather API Key: Register on OpenWeatherMap to get a free API key.
 
+
 ### Steps to Implement
 1. Setting Up the Spring Boot Application
    Go to Spring Initializr.
@@ -46,3 +47,18 @@ OpenWeather API Key: Register on OpenWeatherMap to get a free API key.
    Conclusion
    This project provides a hands-on approach to integrating an external API with a Spring Boot application. The user can quickly get weather forecasts for any city by just providing the city name. Proper error handling ensures that users are guided correctly in case of any issues.
 
+### Sending a Request to the Weather Forecast API
+
+To send a request to the Weather Forecast API and get the weather forecast for a specific city, follow these steps:
+
+1. Open Postman.
+2. Click on the 'New' button and select 'Request' to create a new request.
+3. In the new tab that opens, you'll see a dropdown to select the HTTP method. Select 'GET' from the dropdown.
+4. In the URL field, enter the endpoint URL for the weather forecast. It will look something like this: `http://localhost:8080/weather/forecast?city=Amsterdam`
+   - Replace `localhost:8080` with the appropriate domain and port if your application is running on a different host or port.
+   - Replace `Amsterdam` with the city you want to retrieve the weather forecast for.
+5. You don't need to add any headers manually if the API does not require authentication or additional headers.
+6. Once you've set up the URL, click the 'Send' button to make the request.
+7. The response will be displayed in the lower part of the window. For a successful request, you should receive a `200 OK` status code along with the weather data in JSON format.
+
+Example: http://localhost:8080/weather/forecast?city={city}

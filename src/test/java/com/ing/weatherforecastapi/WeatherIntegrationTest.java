@@ -34,11 +34,8 @@ public class WeatherIntegrationTest {
 
     @Test
     public void whenCalledWithAmsterdam_thenSuccess() {
-        // Assume the WeatherService is configured to connect to the real API
-        // Make sure your application.properties for the test context includes the real API key
         WeatherForecastDTO weatherForAmsterdam = weatherService.getWeather("Amsterdam");
 
-        // Just check if the response is not null. More specific assertions would be better if you know the expected structure.
         assertNotNull(weatherForAmsterdam);
     }
 }

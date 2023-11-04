@@ -8,7 +8,8 @@ Java: Ensure you have Java 11 or higher installed.
 Verify using the command: java -version
 Maven: Ensure Maven is installed.
 
-Verify using the command: mvn -v
+Verify using the command: mvn -v,
+Built with maven 3.1.5 also 2.5.7 or higher supported
 IDE: Any IDE that supports Java and Spring Boot, like IntelliJ IDEA or Eclipse.
 
 OpenWeather API Key: Register on OpenWeatherMap to get a free API key.

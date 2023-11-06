@@ -47,7 +47,21 @@ OpenWeather API Key: Register on OpenWeatherMap to get a free API key.
    Conclusion
    This project provides a hands-on approach to integrating an external API with a Spring Boot application. The user can quickly get weather forecasts for any city by just providing the city name. Proper error handling ensures that users are guided correctly in case of any issues.
 
+### Sending a Request to the Weather Forecast API - USE SWAGGER
+#### Run the spring-boot application. Then follow one of these steps below.
+To send a request to the Weather Forecast API and get the weather forecast for a specific city, follow these steps:
+
+1. Follow the following link. http://localhost:8080/swagger-ui/index.html
+2. Select weather-controller api
+3. In the dropdown menu press Try it out. 
+4. In the city field, enter a valid city name. 
+5. You don't need to add any headers manually if the API does not require authentication or additional headers.
+6. The response will be displayed in the lower part of the window. For a successful request, you should receive a `200 OK` status code along with the weather data in JSON format.
+
+
 ### Sending a Request to the Weather Forecast API
+
+ 
 
 To send a request to the Weather Forecast API and get the weather forecast for a specific city, follow these steps:
 
